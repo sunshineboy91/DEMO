@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度返回顶部效果</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.top{
+			display: block;
+			width: 40px;
+			height: 40px;
+			/*background: linear-gradient(rgba(0,0,0,0.3) 0, rgba(0,0,0,0.3) 100%);*/
+			background: rgba(128,128,128,0.4) url(images/go_top.png) -36px 0 no-repeat;
+			position: fixed;
+			right: 180px;
+			bottom: 20px;
+			font-size: 14px;
+			color: rgba(255,255,255,0);
+			text-align: center;
+			animation: all 1s;
+			text-decoration: none;
+			display: none;
+		}
+		.top:hover{
+			background-image: url();
+			color: rgba(255,255,255,1);
+		}
+	</style>
+</head>
+<body>
+	<img src="images/baidu.png" alt="">
+	<!-- 第二种方式：通过js的scrollTop来控制 -->
+	<a href="javascript:void(0)" class="top">返回<br>顶部</a>
+
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<!-- 引入第三方插件，因为jQuery中已经集成了，只需要移入CDN -->
+	<script src="https://cdn.bootcss.com/jquery-easing/1.4.0/jquery.easing.min.js"></script>
+
+	<script>
+		$(document).scroll(function() {
+			var top = $(document).scrollTop();
+			if(top > 10){
+				$(".top").css("display",'block');
+			}else{
+				$(".top").css("display",'none');
+			}
+		});
+
+		$(".top").click(function() {
+			$("html,body").animate({
+				scrollTop: 0
+			},500,'swing');
+		});
+
+	</script>
+</body>
+</html>

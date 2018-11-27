@@ -1,0 +1,96 @@
+/*style.css*/
+
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style-type: none;
+}
+.active{
+	font-weight: 700;
+	background: #DBE1E4;
+}
+#tab{
+	width: 890px;
+	height: 430px;
+	background: #F7F9FA;
+	/*border: 1px solid #f00;*/
+	margin: 80px auto;
+}
+#tab .menu{
+	width: 890px;
+	height: 39px;
+	border-bottom: 1px solid #DDDFE0;
+}
+#tab .menu .left{
+	float: left;
+	width: 124px;
+	height: 39px;
+	/*border: 1px solid yellow;*/
+	text-align: center;
+	line-height: 39px;
+	/*background: #DBE1E4;*/
+	font-size: 14px;
+	/*color: #333;*/
+	position: relative;
+}
+#tab .menu .left p:hover{
+	cursor: pointer;
+	background: #DBE1E4;
+}
+#tab .menu .left span{
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url(images/card.png) no-repeat -17px 0;
+	position: absolute;
+	left: 14px; 
+	top: 12px;
+}
+#tab .menu .right{
+	float: left;
+	width: 400px;
+	height: 39px;
+	/*border: 1px solid yellow;*/
+	text-align: center;
+	line-height: 39px;
+	font-size: 14px;
+	color: #333;
+}
+#tab .menu .right ul{
+	width: 100%;
+	height: 39px;
+}
+#tab .menu .right ul li{
+	float: left;
+	width: 80px;
+	height: 39px;
+}
+#tab .menu .right ul li:hover{
+	background: #DCE1E5;
+	cursor: pointer;
+}
+
+#tab .menu_content{
+	width: 890px;
+	height: 340px;
+}
+#tab .menu_content ul{
+	width: 890px;
+	height: 340px;
+	border: 11px solid #f00;
+	position: relative;
+}
+#tab .menu_content li{
+	width: 890px;
+	height: 340px;
+	float: left;
+	position: absolute;
+	display: none;
+}
+#tab .menu_content li img{
+	width: 890px;
+	height: 340px;
+}
+
