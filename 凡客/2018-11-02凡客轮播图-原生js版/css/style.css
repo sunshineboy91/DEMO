@@ -1,0 +1,73 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+
+#fk{
+	width: 1200px;
+	height: 535px;
+	border: 1px solid #f00;
+	margin: 10px auto;
+	position: relative;
+}
+#fk .img{
+	display: block;
+	width: 1200px;
+	height: 535px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+#fk img.active{
+	display: block;
+}
+#fk .ul{
+	width: 60px;
+	height: 12px;
+	position: absolute;
+	top: 500px;
+	right: 46%;
+
+}
+#fk .ul .li{
+	width: 12px;
+	height: 12px;
+	margin-right: 8px;
+	background: #333;
+	float: left;
+	border-radius: 12px;
+}
+#fk .ul li.active{
+	background: #a10000;
+}
+#fk .icon{
+	display: block;
+	width: 28px;
+	height: 60px;
+	position: absolute;
+	z-index: 9999;
+}
+#fk a.prev{
+	background: url(../images/focus.png) no-repeat  0 0;
+	left: 10px;
+	top: 230px;
+}
+#fk a.prev:hover{
+	background: url(../images/focus.png) no-repeat  0 -61px;
+}
+#fk a.next{
+	background: url(../images/focus.png) no-repeat -52px 0;
+	right: 10px;
+	top: 230px;
+}
+#fk a.next:hover{
+	background: url(../images/focus.png) no-repeat -52px -61px;
+}
+
