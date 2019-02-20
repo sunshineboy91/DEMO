@@ -8,5 +8,3 @@
 - information.html	资讯页
 - case.html			案例页
 - about.html		关于页
-
-说明：本网站非我一人独立完成，是跟着李炎恢老师做的。
